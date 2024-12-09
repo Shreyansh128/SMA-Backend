@@ -32,7 +32,7 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.use(
     cors({
-        origin: "http://localhost:3000",
+        origin: process.env.Frontend_Url,
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         credentials: true // enable set cookies
     }
