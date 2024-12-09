@@ -69,7 +69,7 @@ app.use("/api/users/v23", require("./routes/ComplaintTrackingRoute.js"));
 
 
 const storage = multer.diskStorage({
-    destination: '/uploads/Chat-Image',
+    destination: '../uploads/Chat-Image',
     filename: (req, file, cb) => {
       cb(null, Date.now() + path.extname(file.originalname));
     },
